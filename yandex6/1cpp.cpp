@@ -4,7 +4,6 @@
 #include <chrono>
 #include <string>
 #include <unordered_map>
-#include <set>
 
 /*
 Даны даты заезда и отъезда каждого гостя. Для каждого гостя дата заезда строго 

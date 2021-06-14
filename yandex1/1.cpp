@@ -4,7 +4,7 @@
 #include <cassert>
 #include <chrono>
 #include <cstdlib>
-#include <unordered_set>
+#include <unordered_map>
 
 /*
 Даны два массива: [1, 2, 3, 2, 0] и [5, 1, 2, 7, 3, 2]
@@ -13,16 +13,21 @@
 
 void mergeNums(std::vector<int>& nums1, std::vector<int>& nums2, std::vector<int>& nums3) {
 
-	std::unordered_set<int> s;
+	std::unordered_map<int, int> m;
 	for (const auto &n : nums1)
 	{
-		if (s.insert(n).second && n > 0)
-			nums3.push_back(n);
+		if (n > 0 && m[n])
+			m[n]++;
+		else if (n > 0 && !m[n])
+			m[n] = 1;
 	}
 	for (const auto &n : nums2)
 	{
-		if (s.insert(n).second && n > 0)
+		if (n > 0 && m[n])
+		{
+			m[n]--;
 			nums3.push_back(n);
+		}
 	}
 }
 

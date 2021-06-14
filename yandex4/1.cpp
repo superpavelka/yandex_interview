@@ -4,7 +4,9 @@
 #include <chrono>
 #include <string>
 
-
+/*
+Дано число n вывести все правильные скобочные последовательности числа 2n
+*/
 void generate(std::string s, int l, int r, int pairs) {
 
 	if ((l == pairs) && (r == pairs))

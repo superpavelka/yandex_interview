@@ -10,7 +10,7 @@
 Sample Input ["eat", "tea", "tan", "ate", "nat", "bat"]
 Sample Output [ ["ate", "eat", "tea"], ["nat", "tan"], ["bat"] ]
 
-Т.е. сгруппировать слова по "общим буквам".*/
+Рў.Рµ. СЃРіСЂСѓРїРїРёСЂРѕРІР°С‚СЊ СЃР»РѕРІР° РїРѕ "РѕР±С‰РёРј Р±СѓРєРІР°Рј".*/
 
 std::vector<std::vector<std::string>> getGroupWords(std::vector<std::string> words)
 {

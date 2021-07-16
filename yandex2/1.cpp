@@ -35,7 +35,7 @@ void convert(std::string& s, std::string& sout)
 		sout += std::to_string(result);
 }
 
-int main()
+int main2()
 {
 	std::string s("AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB");
 	std::string sout;
